@@ -1,0 +1,379 @@
+const PRODUCTS_DATA = [
+  {
+    id: "sports_1",
+    category: "sports",
+    categoryName: "運動鞋",
+    name: "極速狂飆 氣墊跑鞋",
+    englishName: "Air Cushion Running Shoes",
+    price: 3280,
+    originalPrice: 4280,
+    image: "assets/images/sports_1.svg",
+    rating: 4.8,
+    reviews: 124,
+    colors: ["#3B82F6", "#111111", "#EF4444"],
+    colorNames: ["極光藍", "曜石黑", "烈焰紅"],
+    sizes: [39, 40, 41, 42, 43, 44],
+    summary: "專為長跑設計的高彈力避震跑鞋，給您前所未有的彈跳感。",
+    description: "極速狂飆氣墊跑鞋採用先進的氮氣填充避震科技，提供卓越的回彈性能。鞋面使用輕量化呼吸網眼織物，即使在劇烈運動中也能保持腳部乾爽。耐磨橡膠大底配合獨特防滑紋路，無論晴雨都能穩健向前。",
+    features: [
+      "全掌式氮氣避震氣墊，有效吸收衝擊",
+      "高密度呼吸網眼，3D透氣導流",
+      "人體工學包覆設計，完美貼合腳踝",
+      "耐磨防滑碳素橡膠大底，抓地力強"
+    ]
+  },
+  {
+    id: "sports_2",
+    category: "sports",
+    categoryName: "運動鞋",
+    name: "幻影編織 輕量慢跑鞋",
+    englishName: "Phantom Knit Trainer",
+    price: 2680,
+    originalPrice: 3280,
+    image: "assets/images/sports_2.svg",
+    rating: 4.7,
+    reviews: 98,
+    colors: ["#60A5FA", "#D1D5DB", "#111111"],
+    colorNames: ["晨光藍", "極致灰", "夜幕黑"],
+    sizes: [38, 39, 40, 41, 42, 43],
+    summary: "羽量級編織鞋面，貼合如第二層肌膚，適合每日輕度慢跑與健身房訓練。",
+    description: "幻影編織輕量慢跑鞋打破傳統製鞋界限，整雙鞋僅重190克。一體成型飛織技術減少摩擦點，帶來極致舒適的裸足感。高彈力EVA中底能有效分散足底壓力，是您日常健走與都會慢跑的絕佳夥伴。",
+    features: [
+      "一體成型立體飛織，無縫親膚包覆",
+      "極輕量彈力中底，減輕雙足負擔",
+      "後跟熱塑支撐片，穩定踏步重心",
+      "抗菌防臭記憶鞋墊，穿著一整天也乾爽"
+    ]
+  },
+  {
+    id: "sports_3",
+    category: "sports",
+    categoryName: "運動鞋",
+    name: "重力震撼 專業籃球鞋",
+    englishName: "Gravity Shock Basketball Shoes",
+    price: 4280,
+    originalPrice: 5280,
+    image: "assets/images/sports_3.svg",
+    rating: 4.9,
+    reviews: 156,
+    colors: ["#EF4444", "#111111", "#F59E0B"],
+    colorNames: ["火焰紅", "暗夜黑", "耀眼黃"],
+    sizes: [40, 41, 42, 43, 44, 45, 46],
+    summary: "專為爆發型球員打造的高筒防側翻籃球鞋，提供極致足踝保護。",
+    description: "重力震撼專業籃球鞋針對高強度變向與起跳進行了全面優化。高筒鞋領結合動態鎖定飛線，為腳踝提供鐵壁般的保護。中底搭載雙重密度緩震科技，落地瞬間即刻吸收衝擊並轉化為起步動能。",
+    features: [
+      "動態防側翻TPU片，防止劇烈變向扭傷",
+      "高筒魔鬼氈雙重鎖定系統，極致包覆",
+      "人字紋防滑耐磨生膠底，室內室外皆適用",
+      "爆發力中底反馈科技，起跳更輕鬆"
+    ]
+  },
+  {
+    id: "casual_1",
+    category: "casual",
+    categoryName: "休閒鞋",
+    name: "經典百搭 帆布板鞋",
+    englishName: "Classic Canvas Sneakers",
+    price: 1680,
+    originalPrice: 2280,
+    image: "assets/images/casual_1.svg",
+    rating: 4.6,
+    reviews: 210,
+    colors: ["#FFFFFF", "#111111", "#1E3A8A"],
+    colorNames: ["經典白", "簡約黑", "海軍藍"],
+    sizes: [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    summary: "不退流行的街頭標誌，百搭各種風格，舒適與時尚兼具。",
+    description: "這款經典帆布板鞋是每個人鞋櫃必備的單品。採用高磅數耐磨水洗帆布，耐穿易打理。特製軟彈加厚橡膠鞋墊，改善了傳統板鞋底硬的缺點，讓您逛街一整天也毫不費力。",
+    features: [
+      "12盎司耐磨水洗帆布，高透氣性",
+      "加厚防震乳膠鞋墊，極致舒適",
+      "硫化防滑橡膠大底，經典格紋紋路",
+      "簡約雙色車線，彰顯文青氣息"
+    ]
+  },
+  {
+    id: "casual_2",
+    category: "casual",
+    categoryName: "休閒鞋",
+    name: "雅痞風尚 麂皮懶人鞋",
+    englishName: "Luxury Suede Loafers",
+    price: 2480,
+    originalPrice: 3280,
+    image: "assets/images/casual_2.svg",
+    rating: 4.7,
+    reviews: 85,
+    colors: ["#D1A17B", "#4B5563", "#1E293B"],
+    colorNames: ["暖沙駝", "經典灰", "紳士藍"],
+    sizes: [38, 39, 40, 41, 42, 43],
+    summary: "一秒穿脫的優雅享受，頂級麂皮觸感，展現隨性不羈的雅痞風格。",
+    description: "雅痞風尚麂皮懶人鞋完美融合了便鞋的便利性與紳士鞋的優雅。精選義大利進口頭層牛麂皮，毛感細緻柔順。無鞋帶一腳蹬設計搭配後跟防磨包覆，是商務休閒與度假旅遊的完美選擇。",
+    features: [
+      "進口頭層麂皮鞋面，細膩高質感",
+      "免繫鞋帶一秒穿脫，後跟親膚防磨",
+      "輕量防滑橡膠發泡底，行走無聲安靜",
+      "全真皮透氣內裡，不穿襪依然乾爽舒適"
+    ]
+  },
+  {
+    id: "casual_3",
+    category: "casual",
+    categoryName: "休閒鞋",
+    name: "復古街頭 高筒休閒鞋",
+    englishName: "Retro High-Top Sneakers",
+    price: 2180,
+    originalPrice: 2880,
+    image: "assets/images/casual_3.svg",
+    rating: 4.5,
+    reviews: 74,
+    colors: ["#F59E0B", "#111111", "#10B981"],
+    colorNames: ["復古黃", "夜影黑", "森林綠"],
+    sizes: [37, 38, 39, 40, 41, 42, 43, 44],
+    summary: "美式復古工裝風格，拼色設計，彰顯獨特的潮流個性。",
+    description: "復古街頭高筒休閒鞋向80年代街頭文化致敬。大膽的色彩碰撞與拼接剪裁，層次感極佳。加厚鞋領包裹踝關節，內側特別設計排氣孔，兼具外觀與實用性，工裝或寬鬆街頭風穿搭的最佳綠葉。",
+    features: [
+      "高質感拼接鞋面，耐髒防潑水",
+      "加厚踝部泡棉，加強支撐與保暖",
+      "防滑生膠底，展現復古美學風格",
+      "配贈兩款配色鞋帶，隨心變換風格"
+    ]
+  },
+  {
+    id: "formal_1",
+    category: "formal",
+    categoryName: "正式皮鞋",
+    name: "尊爵手工 德比皮鞋",
+    englishName: "Premium Derby Shoes",
+    price: 4980,
+    originalPrice: 6500,
+    image: "assets/images/formal_1.svg",
+    rating: 4.9,
+    reviews: 142,
+    colors: ["#111111", "#4A2E1B"],
+    colorNames: ["經典黑", "深焦糖"],
+    sizes: [39, 40, 41, 42, 43, 44, 45],
+    summary: "頂級頭層牛皮打造，專業職人手工拋光擦色，展現商務領袖氣質。",
+    description: "尊爵手工德比皮鞋由擁有30年經驗的製鞋職人純手工打造。選用歐洲進口頂級小牛皮，光澤內斂高雅。開放式襟片（Open Lacing）設計，穿著時能依腳背高度彈性調節，不易壓迫腳背，是高階主管的首選。",
+    features: [
+      "頂級歐洲進口小牛皮，皮質豐滿細緻",
+      "職人手工擦色拋光，每雙皆有獨特光澤",
+      "固特異沿條工藝，堅固耐穿可換底",
+      "符合亞洲人腳型的寬楦設計，不擠腳"
+    ]
+  },
+  {
+    id: "formal_2",
+    category: "formal",
+    categoryName: "正式皮鞋",
+    name: "經典雕花 牛皮牛津鞋",
+    englishName: "Classic Brogue Oxfords",
+    price: 5280,
+    originalPrice: 6800,
+    image: "assets/images/formal_2.svg",
+    rating: 4.8,
+    reviews: 93,
+    colors: ["#634832", "#111111"],
+    colorNames: ["英倫棕", "神秘黑"],
+    sizes: [39, 40, 41, 42, 43, 44],
+    summary: "精緻翼紋雕花設計，展現優雅的紳士英倫底蘊。",
+    description: "這款經典雕花牛津鞋完美承襲了英式正統製鞋美學。鞋面的翼紋（Wingtip）與鏤空雕花（Brogueing）精確而精美。封閉式襟片設計，線條流暢優雅，非常適合搭配正裝、西服，在婚禮或正式晚宴中脫穎而出。",
+    features: [
+      "手工孔眼雕花工藝，細節處盡顯奢華",
+      "精選植鞣革牛皮，皮面自然透氣",
+      "加厚真皮大底搭配減震橡膠貼片，好走防滑",
+      "典雅流線鞋型，視覺修飾腳部線條"
+    ]
+  },
+  {
+    id: "formal_3",
+    category: "formal",
+    categoryName: "正式皮鞋",
+    name: "英倫雅痞 雙扣孟克鞋",
+    englishName: "Double Monk Strap Shoes",
+    price: 5680,
+    originalPrice: 7200,
+    image: "assets/images/formal_3.svg",
+    rating: 4.9,
+    reviews: 67,
+    colors: ["#4A2E1B", "#111111"],
+    colorNames: ["經典深棕", "仕紳曜黑"],
+    sizes: [39, 40, 41, 42, 43, 44],
+    summary: "獨特雙帶扣設計，擺脫鞋帶束縛，商務與時尚的完美結合。",
+    description: "雙扣孟克鞋是現代雅痞紳士的代名詞。獨特的金屬雙扣帶設計取代了傳統鞋帶，線條洗練。不論搭配訂製西裝或是休閒九分褲、西裝背心，都能展現極具個人特色的層次感。",
+    features: [
+      "頂級黃銅金屬扣具，耐磨不生鏽",
+      "精細手工車縫線，鞋體結構緊密",
+      "真皮內襯與超軟乳膠中底，服貼腳掌",
+      "微翹鞋頭設計，踏步更加省力順暢"
+    ]
+  },
+  {
+    id: "sandals_1",
+    category: "sandals",
+    categoryName: "涼鞋拖鞋",
+    name: "野行戶外 織帶涼鞋",
+    englishName: "Outdoor Webbing Sandals",
+    price: 1880,
+    originalPrice: 2480,
+    image: "assets/images/sandals_1.svg",
+    rating: 4.7,
+    reviews: 138,
+    colors: ["#111111", "#047857", "#4B5563"],
+    colorNames: ["機能黑", "軍裝綠", "水泥灰"],
+    sizes: [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    summary: "水陸兩用機能設計，多點調節織帶，夏日戶外探險的最佳伴侶。",
+    description: "野行戶外織帶涼鞋是專為露營、健行與溯溪設計的機能涼鞋。快乾耐磨的尼龍織帶，配合三點快調式魔鬼氈，可隨意調整至最舒適的包覆度。高彈EVA中底提供良好避震支撐，陪您跋山涉水。",
+    features: [
+      "防撥水快乾尼龍織帶，不易發霉發臭",
+      "多點魔鬼氈調節系統，完美貼合各種足弓",
+      "黃金大底級排水防滑齒紋，抓地力驚人",
+      "抗菌銀離子鞋床，有效防護異味產生"
+    ]
+  },
+  {
+    id: "sandals_2",
+    category: "sandals",
+    categoryName: "涼鞋拖鞋",
+    name: "經典水松 雙帶軟木拖鞋",
+    englishName: "Classic Cork Slide Sandals",
+    price: 1580,
+    originalPrice: 1980,
+    image: "assets/images/sandals_2.svg",
+    rating: 4.6,
+    reviews: 184,
+    colors: ["#85583B", "#FFFFFF", "#111111"],
+    colorNames: ["復古皮棕", "純淨白", "簡約黑"],
+    sizes: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+    summary: "天然軟木鞋床，越穿越貼合腳型，夏日休閒時尚的必備之選。",
+    description: "經典水松軟木拖鞋採用天然水松軟木碎混合橡膠壓製中底。具備優異的彈性與吸震能力。寬版小牛皮雙帶設計配上金屬扣環，簡約而不失品味，是您外出倒垃圾、去超商或假日漫步的隨意穿搭首選。",
+    features: [
+      "天然軟木人體工學足底板，越穿越契合您的腳底曲線",
+      "真皮寬版調節帶，舒適不刮腳背",
+      "EVA輕量靜音耐磨大底，走得更平穩",
+      "吸汗反絨麂皮鞋床，保持腳底清爽"
+    ]
+  },
+  {
+    id: "sandals_3",
+    category: "sandals",
+    categoryName: "涼鞋拖鞋",
+    name: "雲感減壓 室內防滑拖鞋",
+    englishName: "Cozy Cloud Home Slippers",
+    price: 780,
+    originalPrice: 980,
+    image: "assets/images/sandals_3.svg",
+    rating: 4.8,
+    reviews: 290,
+    colors: ["#E5E7EB", "#FBCFE8", "#BFDBFE"],
+    colorNames: ["極簡灰", "櫻花粉", "晴空藍"],
+    sizes: [36, 38, 40, 42, 44],
+    summary: "如踩在雲朵般的超軟Q感受，加厚減壓設計，居家放鬆極致享受。",
+    description: "雲感減壓室內拖鞋採用一體成型高級EVA材質，鞋底厚達4.0cm，帶來驚人的彈性與支撐感。防滑波浪底紋設計，即使在潮濕的浴室中行走也安全無虞，徹底釋放您一整天站立或行走的雙足壓力。",
+    features: [
+      "4.0cm加厚防震中底，雙倍彈力回饋",
+      "極致輕量化，單隻僅重約110克",
+      "30度前翹防護鞋頭，防止踢到家具受傷",
+      "一體成型無縫無孔，易清洗不積水"
+    ]
+  },
+  {
+    id: "boots_1",
+    category: "boots",
+    categoryName: "靴子",
+    name: "極簡經典 雀爾喜靴",
+    englishName: "Classic Chelsea Boots",
+    price: 3980,
+    originalPrice: 4980,
+    image: "assets/images/boots_1.svg",
+    rating: 4.8,
+    reviews: 112,
+    colors: ["#111111", "#4A2E1B"],
+    colorNames: ["酷帥黑", "復古焦糖"],
+    sizes: [38, 39, 40, 41, 42, 43, 44],
+    summary: "流暢俐落無鞋帶設計，鬆緊帶易穿脫，修飾腿型、百搭有型。",
+    description: "雀爾喜靴自維多利亞時代起便是時尚圈的寵兒。這款靴子精選厚實堅韌的頭層牛皮，版型洗練流暢。後跟特別加上拉環，搭配側邊高彈力進口鬆緊帶，讓您輕易穿脫，帥氣不拖泥帶水。",
+    features: [
+      "厚實亮光頭層牛皮，好保養不易起皺",
+      "高彈力雙側鬆緊帶，貼合踝關節",
+      "後跟耐用牛皮提帶，穿鞋一拉即妥",
+      "木紋拼貼防滑膠底，穩重富有層次"
+    ]
+  },
+  {
+    id: "boots_2",
+    category: "boots",
+    categoryName: "靴子",
+    name: "硬漢型格 真皮軍靴",
+    englishName: "Premium Combat Boots",
+    price: 4580,
+    originalPrice: 5800,
+    image: "assets/images/boots_2.svg",
+    rating: 4.9,
+    reviews: 86,
+    colors: ["#111111", "#374151"],
+    colorNames: ["狂野黑", "戰術灰"],
+    sizes: [39, 40, 41, 42, 43, 44, 45],
+    summary: "硬派工裝迷必備，高筒繫帶與側邊拉鍊雙系統，釋放野性魅力。",
+    description: "硬漢型格真皮軍靴專為追求卓越保護與粗獷質感的您打造。採用耐磨軍規牛皮，鞋頭特別做防撞加固處理。內側設計YKK金屬防開拉鍊，平時穿脫免去繁瑣的繫帶過程，展現俐落軍旅風采。",
+    features: [
+      "軍規耐磨加厚牛皮，抗刮防撕裂",
+      "YKK側拉鍊設計，穿脫只需3秒鐘",
+      "鞋頭內襯防鋼防撞板，戶外防護一流",
+      "重裝深溝橡膠防滑大底，極限地貌輕鬆征服"
+    ]
+  },
+  {
+    id: "others",
+    category: "others",
+    categoryName: "其它類",
+    name: "皇家奢華 實木鞋撐與護理套裝",
+    englishName: "Royal Cedar Shoe Tree & Care Kit",
+    price: 1280,
+    originalPrice: 1680,
+    image: "assets/images/others_1.svg",
+    rating: 4.7,
+    reviews: 54,
+    colors: ["#A16207"],
+    colorNames: ["原木色"],
+    sizes: ["F"],
+    summary: "天然紅雪松木鞋撐，吸收濕氣、消除異味、維持皮鞋完美線條。",
+    description: "精美禮盒裝護理套裝，包含一雙頂級紅雪松木（香杉）鞋撐、馬毛刷、蜂蠟滋養霜與純棉擦鞋布。雪松木釋放淡雅香氣，能有效吸濕防霉；彈簧伸縮設計能撐平皮鞋折痕，延長愛鞋壽命倍增氣質。",
+    features: [
+      "天然美國進口紅雪松，除濕香氛雙效合一",
+      "雙向彈簧伸縮機構，完美維持皮鞋輪廓",
+      "100%天然馬毛刷，不傷皮革光澤",
+      "深層蜂蠟鞋膏，防撥水防龜裂"
+    ]
+  },
+  {
+    id: "others_2",
+    category: "others",
+    categoryName: "其它類",
+    name: "經典編織 鞋帶與羊毛襪禮盒",
+    englishName: "Premium Shoelaces & Wool Socks Set",
+    price: 680,
+    originalPrice: 880,
+    image: "assets/images/others_2.svg",
+    rating: 4.5,
+    reviews: 43,
+    colors: ["#4B5563"],
+    colorNames: ["典雅混灰"],
+    sizes: ["M (23-25cm)", "L (26-28cm)"],
+    summary: "保暖美麗諾羊毛混紡襪，吸濕排汗，搭配多款質感打蠟棉質鞋帶。",
+    description: "精選澳洲美麗諾羊毛混紡針織襪，厚實保暖、吸濕透氣且絕佳避震。禮盒內附三組不同色系的高質感圓形打蠟棉鞋帶，為您的皮鞋或靴子提供精緻的替換選擇，是年節送禮或個人精緻配件的體面選擇。",
+    features: [
+      "60%美麗諾羊毛，恆溫保暖無刺癢感",
+      "足底加厚毛圈，減緩行走時足底衝擊",
+      "打蠟棉質鞋帶，強韌耐磨不易鬆脫",
+      "質感環保牛皮紙禮盒包裝，送禮大氣"
+    ]
+  }
+];
+
+// Helper functions for globally accessing data
+function getProductById(id) {
+  return PRODUCTS_DATA.find(p => p.id === id);
+}
+
+function getProductsByCategory(category) {
+  return PRODUCTS_DATA.filter(p => p.category === category);
+}

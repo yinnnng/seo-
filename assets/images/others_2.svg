@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333333" />
+      <stop offset="100%" stop-color="#1F1F1F" />
+    </linearGradient>
+    <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#BE185D" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.03">
+    <line x1="40" y1="0" x2="40" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="80" y1="0" x2="80" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="280" y1="0" x2="280" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="300" stroke="#FFF" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative Typography -->
+  <text x="25" y="45" font-family="'Montserrat', sans-serif" font-weight="800" font-size="12" fill="#F472B6" opacity="0.8" letter-spacing="2">OTHERS</text>
+  <text x="375" y="45" font-family="'Montserrat', sans-serif" font-weight="500" font-size="12" fill="#FFFFFF" opacity="0.4" text-anchor="end">NO. OTH-02</text>
+  
+  <text x="200" y="270" font-family="'Montserrat', sans-serif" font-weight="300" font-size="110" fill="#FFFFFF" opacity="0.04" text-anchor="middle" letter-spacing="5">PREMIUM</text>
+
+  <!-- Shadow Floor -->
+  <ellipse cx="200" cy="215" rx="130" ry="12" fill="#000" opacity="0.25" filter="url(#shadow)" />
+
+  <!-- Shoe Graphic Group -->
+  <g transform="translate(0, 5)" filter="url(#shadow)">
+    
+<path d="M 120,180 C 120,150 150,120 180,120 C 210,120 240,150 240,180 Z M 160,120 L 160,80 L 200,80 L 200,120 Z" fill="url(#shoe-grad)" stroke="#FFFFFF" stroke-width="2" />
+<circle cx="180" cy="180" r="40" fill="url(#accent-grad)" opacity="0.8" />
+<path d="M 100,190 C 100,190 140,200 180,200 C 220,200 260,190 260,190 L 260,210 C 260,210 220,220 180,220 C 140,220 100,210 100,210 Z" fill="url(#accent-grad)" />
+
+  </g>
+
+  <!-- Product Labels -->
+  <text x="25" y="255" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">經典編織 鞋帶與羊毛襪禮盒</text>
+  <text x="25" y="275" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="400" font-size="11" fill="#FFFFFF" opacity="0.6">Premium Shoelaces & Wool Socks Set</text>
+  
+  <rect x="305" y="238" width="70" height="28" rx="14" fill="#F472B6" />
+  <text x="340" y="257" font-family="'Montserrat', sans-serif" font-weight="700" font-size="13" fill="#1E2022" text-anchor="middle">NT$ 680</text>
+</svg>

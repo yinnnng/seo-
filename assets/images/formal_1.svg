@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B2421" />
+      <stop offset="100%" stop-color="#1B1513" />
+    </linearGradient>
+    <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A27B5C" />
+      <stop offset="100%" stop-color="#634832" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DCD7C9" />
+      <stop offset="100%" stop-color="#A27B5C" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.03">
+    <line x1="40" y1="0" x2="40" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="80" y1="0" x2="80" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="280" y1="0" x2="280" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="300" stroke="#FFF" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative Typography -->
+  <text x="25" y="45" font-family="'Montserrat', sans-serif" font-weight="800" font-size="12" fill="#DCD7C9" opacity="0.8" letter-spacing="2">FORMAL</text>
+  <text x="375" y="45" font-family="'Montserrat', sans-serif" font-weight="500" font-size="12" fill="#FFFFFF" opacity="0.4" text-anchor="end">NO. FOR-01</text>
+  
+  <text x="200" y="270" font-family="'Montserrat', sans-serif" font-weight="300" font-size="110" fill="#FFFFFF" opacity="0.04" text-anchor="middle" letter-spacing="5">PREMIUM</text>
+
+  <!-- Shadow Floor -->
+  <ellipse cx="200" cy="215" rx="130" ry="12" fill="#000" opacity="0.25" filter="url(#shadow)" />
+
+  <!-- Shoe Graphic Group -->
+  <g transform="translate(0, 5)" filter="url(#shadow)">
+    
+<path d="M 70,175 C 70,175 80,195 130,195 C 180,195 230,180 280,175 C 330,170 360,155 360,135 C 360,115 340,100 315,100 C 290,100 280,115 250,115 C 220,115 200,90 170,90 C 140,90 110,120 70,175 Z" fill="url(#shoe-grad)" stroke="#FFFFFF" stroke-width="2" />
+<path d="M 170,90 C 165,115 170,140 185,150" fill="none" stroke="#FFFFFF" stroke-dasharray="2,2" stroke-width="1.5" />
+<path d="M 230,115 C 235,135 250,155 285,155" fill="none" stroke="#FFFFFF" stroke-dasharray="2,2" stroke-width="1.5" />
+<path d="M 65,180 C 65,180 75,195 85,195 L 85,185 Z" fill="#333" />
+<path d="M 90,198 C 120,198 200,198 350,182 C 355,182 355,188 350,190 C 200,208 120,208 90,208 Z" fill="url(#accent-grad)" />
+
+  </g>
+
+  <!-- Product Labels -->
+  <text x="25" y="255" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">尊爵手工 德比皮鞋</text>
+  <text x="25" y="275" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="400" font-size="11" fill="#FFFFFF" opacity="0.6">Premium Derby Shoes</text>
+  
+  <rect x="305" y="238" width="70" height="28" rx="14" fill="#DCD7C9" />
+  <text x="340" y="257" font-family="'Montserrat', sans-serif" font-weight="700" font-size="13" fill="#1E2022" text-anchor="middle">NT$ 4,980</text>
+</svg>

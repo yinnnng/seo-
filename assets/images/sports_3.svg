@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2B3C" />
+      <stop offset="100%" stop-color="#0E1722" />
+    </linearGradient>
+    <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.03">
+    <line x1="40" y1="0" x2="40" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="80" y1="0" x2="80" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="280" y1="0" x2="280" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="300" stroke="#FFF" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="300" stroke="#FFF" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative Typography -->
+  <text x="25" y="45" font-family="'Montserrat', sans-serif" font-weight="800" font-size="12" fill="#60A5FA" opacity="0.8" letter-spacing="2">SPORTS</text>
+  <text x="375" y="45" font-family="'Montserrat', sans-serif" font-weight="500" font-size="12" fill="#FFFFFF" opacity="0.4" text-anchor="end">NO. SPO-03</text>
+  
+  <text x="200" y="270" font-family="'Montserrat', sans-serif" font-weight="300" font-size="110" fill="#FFFFFF" opacity="0.04" text-anchor="middle" letter-spacing="5">PREMIUM</text>
+
+  <!-- Shadow Floor -->
+  <ellipse cx="200" cy="215" rx="130" ry="12" fill="#000" opacity="0.25" filter="url(#shadow)" />
+
+  <!-- Shoe Graphic Group -->
+  <g transform="translate(0, 5)" filter="url(#shadow)">
+    
+<path d="M 60,180 C 60,180 80,210 140,210 C 200,210 230,190 280,180 C 330,170 350,150 350,120 C 350,90 320,80 300,90 C 280,100 270,120 250,110 C 230,100 200,60 170,60 C 140,60 110,100 90,120 C 70,140 60,180 60,180 Z" fill="url(#shoe-grad)" stroke="#FFFFFF" stroke-width="2" />
+<path d="M 170,60 L 190,110 M 190,70 L 210,115 M 210,80 L 230,120" stroke="url(#accent-grad)" stroke-width="3" stroke-linecap="round" />
+<path d="M 50,185 C 50,185 80,215 140,215 C 200,215 280,185 345,185 C 355,185 355,195 345,198 C 280,198 200,225 140,225 C 80,225 50,195 50,185 Z" fill="url(#accent-grad)" />
+
+  </g>
+
+  <!-- Product Labels -->
+  <text x="25" y="255" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">重力震撼 專業籃球鞋</text>
+  <text x="25" y="275" font-family="'Noto Sans TC', 'Montserrat', sans-serif" font-weight="400" font-size="11" fill="#FFFFFF" opacity="0.6">Gravity Shock Basketball Shoes</text>
+  
+  <rect x="305" y="238" width="70" height="28" rx="14" fill="#60A5FA" />
+  <text x="340" y="257" font-family="'Montserrat', sans-serif" font-weight="700" font-size="13" fill="#1E2022" text-anchor="middle">NT$ 4,280</text>
+</svg>

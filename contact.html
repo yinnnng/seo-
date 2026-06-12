@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 | 呂佳穎的鞋店</title>
+  <meta name="description" content="聯絡「呂佳穎的鞋店」。如有尺寸諮詢、退換貨申請、合作提案或產品意見回饋，請隨時填寫表單或與我們電話信箱聯絡。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/brand_logo.svg" type="image/svg+xml">
+</head>
+<body id="page-contact">
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/brand_logo.svg" alt="呂佳穎的鞋店">
+        <div>
+          <span>呂佳穎的鞋店</span>
+          <span class="logo-sub">LU CHIA-YING SHOES</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" id="nav-home">首頁</a>
+        <a href="about.html" id="nav-about">公司簡介</a>
+        <a href="sports.html" id="nav-sports">運動鞋</a>
+        <a href="casual.html" id="nav-casual">休閒鞋</a>
+        <a href="formal.html" id="nav-formal">正式皮鞋</a>
+        <a href="sandals.html" id="nav-sandals">涼鞋拖鞋</a>
+        <a href="boots.html" id="nav-boots">靴子</a>
+        <a href="others.html" id="nav-others">其它類</a>
+        <a href="contact.html" class="active" id="nav-contact">聯絡我們</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="nav-btn" id="cart-open-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Hero Header -->
+  <section class="section" style="padding: 140px 0 40px; background-color: var(--primary); color: var(--text-light); text-align: center;">
+    <div class="container">
+      <span class="section-subtitle" style="color: var(--accent);">GET IN TOUCH</span>
+      <h1 class="hero-title" style="margin-bottom: 0; font-size: 44px;">聯絡我們</h1>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container contact-grid">
+      <!-- Info Column -->
+      <div class="contact-info-card">
+        <h3>服務熱線與據點</h3>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 30px;">如有任何訂單問題、尺寸疑慮或退換貨需求，歡迎透過以下方式或填寫右側表單與我們聯繫。</p>
+        
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>品牌概念旗艦店</h4>
+            <p>台北市信義區信義路五段 7 號 89 樓 (Taipei 101)</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>客服電話</h4>
+            <p>02-2345-6789</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h4>電子郵件</h4>
+            <p>service@luchiaying-shoes.com</p>
+          </div>
+        </div>
+
+        <div class="hours-grid">
+          <h4 style="font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 10px;">門市營業時間</h4>
+          <div class="hours-row">
+            <span>週一至週五 (Mon - Fri)</span>
+            <span>11:00 - 21:30</span>
+          </div>
+          <div class="hours-row">
+            <span>週六至週日 (Sat - Sun)</span>
+            <span>10:30 - 22:00</span>
+          </div>
+          <div class="hours-row" style="color: var(--accent); font-weight: 700; margin-top: 10px;">
+            <span>國定假日配合台北101商場時間營業</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="contact-form-wrap">
+        <h3>填寫聯絡表單</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="contact-name">顧客姓名 *</label>
+            <input type="text" id="contact-name" required placeholder="例如：林先生 / 陳小姐">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-email">電子信箱 *</label>
+            <input type="email" id="contact-email" required placeholder="username@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">聯絡電話</label>
+            <input type="tel" id="contact-phone" placeholder="0912-345678">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">詢問主題 *</label>
+            <select id="contact-subject" required>
+              <option value="">請選擇您的問題分類...</option>
+              <option value="order">訂單與付款相關</option>
+              <option value="size">鞋款尺碼諮詢</option>
+              <option value="return">退換貨申請</option>
+              <option value="cooperate">商業合作提案</option>
+              <option value="other">其他問題意見</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">詳細內容描述 *</label>
+            <textarea id="contact-message" rows="5" required placeholder="請詳細寫下您的問題與訂單編號（如有），以利客服迅速為您解答。"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">發送詢問訊息</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordions Section -->
+  <section class="section" id="faq" style="background-color: var(--bg-white); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">常見問題解答</h2>
+      </div>
+      <div class="faq-wrap">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>請問鞋款有提供保固與免費保養服務嗎？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>有的！凡在「呂佳穎的鞋店」購買之任何正價皮鞋或靴款，皆享有<b>一年期免費鞋底沿條加固與鞋面專業蜂蠟滋養護理服務</b>（每季可送回旗艦門市保養一次）。運動鞋與涼鞋則提供非人為損壞之 3 個月內開膠免費維修保固。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>如果收到後尺碼不合適，可以辦理退換貨嗎？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>沒問題！我們提供<b>首創 7 天內無條件免費退換尺碼服務</b>。請保持鞋盒包裝完整且「鞋底無室外落地行走磨損痕跡」，並在收到商品 7 天內聯繫客服或填寫本頁面表單，我們將派專車前往您指定的地點收回並送上新尺碼，您無須負擔任何來回運費。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>下單付款完成後，商品通常需要多久時間送達？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>全店商品皆為台灣本地現貨，<b>工作日當天下午 3:00 前下單並付款完成，即可當天出貨</b>。大台北地區通常可在出貨隔日送達；其他縣市（不含偏遠與離島地區）則於出貨後 2 天內送達。若遇超商取貨則需 2 至 3 個工作天。</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>有實體概念店可以提供實鞋試穿與尺碼套量嗎？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>有的！歡迎蒞臨我們的<b>「台北101旗艦門市」</b>，現場陳列全系列運動鞋、德比皮鞋與靴款，並有專屬製鞋顧問為您進行精密 3D 腳型掃描與尺碼對照，協助您找到最服貼好走的專屬黃金尺碼。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h4>呂佳穎的鞋店</h4>
+        <p>極致舒適，優雅隨行。我們致力於為每一雙腳尋找最完美的歸宿，提供現代、質感、實穿的頂級製鞋工藝與購物理程。</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">LINE</a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h5>產品分類</h5>
+        <ul>
+          <li><a href="sports.html">運動鞋</a></li>
+          <li><a href="casual.html">休閒鞋</a></li>
+          <li><a href="formal.html">正式皮鞋</a></li>
+          <li><a href="sandals.html">涼鞋拖鞋</a></li>
+          <li><a href="boots.html">靴子</a></li>
+          <li><a href="others.html">其它類配件</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>探索品牌</h5>
+        <ul>
+          <li><a href="about.html">公司簡介</a></li>
+          <li><a href="about.html#story">品牌故事</a></li>
+          <li><a href="about.html#philosophy">工藝設計</a></li>
+          <li><a href="contact.html#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>服務與聯絡</h5>
+        <ul>
+          <li><a href="contact.html">聯絡我們</a></li>
+          <li>服務時間：週一至週日 10:00 - 21:00</li>
+          <li>客服信箱：service@luchiaying-shoes.com</li>
+          <li>門市電話：02-2345-6789</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 呂佳穎的鞋店 (Lu Chia-Ying Shoes). All Rights Reserved. Designed for Excellence.</p>
+      <div class="footer-bottom-links">
+        <a href="#">使用條款</a>
+        <a href="#">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer Overlay -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <span class="cart-title">購物車清單</span>
+      <span class="cart-close-btn" id="cart-close-btn">&times;</span>
+    </div>
+    <div class="cart-items-wrap" id="cart-items-wrap">
+      <!-- Dynamic cart items -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>商品小計:</span>
+        <span class="cart-subtotal-price" id="cart-subtotal-price">NT$ 0</span>
+      </div>
+      <button class="btn btn-checkout" id="checkout-btn">立即結帳</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
