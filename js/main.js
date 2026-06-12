@@ -378,7 +378,7 @@ function renderProductsGrid(container, list) {
       <div class="product-card">
         ${discountBadge}
         <div class="product-image-wrap">
-          <img src="${p.image}" alt="${p.name}">
+          <img src="${p.image}" alt="${p.alt || p.name}" title="${p.title || p.name}">
           <div class="product-actions-overlay">
             <a href="product-detail.html?id=${p.id}" class="overlay-btn" title="查看詳情">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
@@ -471,7 +471,7 @@ function initDetailPage() {
   // Render main image
   const gallery = document.getElementById("detail-gallery-wrap");
   if (gallery) {
-    gallery.innerHTML = `<img src="${product.image}" alt="${product.name}" id="main-detail-img">`;
+    gallery.innerHTML = `<img src="${product.image}" alt="${product.alt || product.name}" title="${product.title || product.name}" id="main-detail-img">`;
   }
   
   // Color selection swatches
